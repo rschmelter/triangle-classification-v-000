@@ -5,7 +5,7 @@ class Triangle
 
   def kind(a, b, c)
     sides = [a, b, c].sort
-    if sides[0] = 0 || sides[0] + sides[1] <= sides[2] || sides[0] + sides[2] <= sides[1] || sides[1] + sides[2] <= sides[0]                   
+    if sides[0] = 0 || sides[0] + sides[1] <= sides[2] || sides[0] + sides[2] <= sides[1] || sides[1] + sides[2] <= sides[0]
       raise TriangleError
     elsif sides[0] == sides[2]
       :equilateral
@@ -13,7 +13,7 @@ class Triangle
       :isosceles
     else
       :scalene
-    
+    end
   end
 
 end
