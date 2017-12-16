@@ -4,7 +4,7 @@ class Triangle
     @sides = [a, b, c].sort
   end
 
-  def kind(a, b, c)
+  def kind
 
     if @sides[0] = 0 || @sides[0] + @sides[1] <= @sides[2] || @sides[0] + @sides[2] <= @sides[1] || @sides[1] + @sides[2] <= @sides[0]
       raise TriangleError
