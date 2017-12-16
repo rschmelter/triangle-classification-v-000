@@ -1,10 +1,19 @@
 class Triangle
 
-  def initialize(side_one, side_two, side_three)
+  def initialize(a, b, c)
   end
 
-  def kind
-
+  def kind(a, b, c)
+    sides = [a, b, c].sort
+    if sides[0] = 0 || sides[0] + sides[1] <= sides[2] || sides[0] + sides[2] <= sides[1] || sides[1] + sides[2] <= sides[0]                   
+      raise TriangleError
+    elsif sides[0] == sides[2]
+      :equilateral
+    elsif sides[0] == sides[1] || sides[1] == sides[2]
+      :isosceles
+    else
+      :scalene
+    
   end
 
 end
